@@ -1,10 +1,10 @@
 import csv
-from unittest import result
+import csv
 from scrapli.driver.core import IOSXEDriver
 from inv import DEVICES
 
 for device in DEVICES:
-    hostname = device["hostname"
+    hostname = device["hostname"]
     with IOSXEDriver(
         host=device["host"],
         auth_username="admin",
@@ -14,4 +14,3 @@ for device in DEVICES:
     ) as conn:
         response = conn.send_command("show version")
         print(response.result)
-        
