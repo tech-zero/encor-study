@@ -13,4 +13,5 @@ for device in DEVICES:
         ssh_config_file=True,
     ) as conn:
         response = conn.send_command("show version")
-        print(response.result)
+    structured_result = response.textfsm_parse_output()
+#        print(response.result)
