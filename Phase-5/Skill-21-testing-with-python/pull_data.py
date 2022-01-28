@@ -1,5 +1,4 @@
 import csv
-import csv
 from scrapli.driver.core import IOSXEDriver
 from inv import DEVICES
 
