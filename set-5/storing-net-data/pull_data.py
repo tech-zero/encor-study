@@ -1,10 +1,10 @@
 import csv
 from scrapli.driver.core import IOSXEDriver
-# from rich import print as rprint
+
 from inv import DEVICES
 
 for device in DEVICES:
-    hostname = device['hostname']
+    hostname = device["hostname"]
     with IOSXEDriver(
         host=device["host"],
         auth_username="admin",
