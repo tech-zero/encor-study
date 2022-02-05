@@ -1,0 +1,214 @@
+Building configuration...
+
+
+Current configuration : 5222 bytes
+!
+! Last configuration change at 11:22:44 Phoenix Thu Feb 3 2022 by admin
+!
+version 15.9
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname R2
+!
+boot-start-marker
+boot-end-marker
+!
+!
+vrf definition HR-Users
+ !
+ address-family ipv4
+ exit-address-family
+ !
+ address-family ipv6
+ exit-address-family
+!
+vrf definition Sales-Users
+ !
+ address-family ipv4
+ exit-address-family
+ !
+ address-family ipv6
+ exit-address-family
+!
+enable secret 9 $9$hwXFkDkoMW4/39$gsAmGrQhWWJH/qg9v3ypO3sk4DgjhD8nphosTLLfPCY
+!
+no aaa new-model
+!
+!
+!
+clock timezone Phoenix -7 0
+mmi polling-interval 60
+no mmi auto-configure
+no mmi pvc
+mmi snmp-timeout 180
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+no ip domain lookup
+ip domain name valbuena-tech
+ip name-server 8.8.8.8
+ip cef
+ipv6 unicast-routing
+ipv6 cef
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+username admin privilege 15 secret 9 $9$HJkNH.9gqGJY2f$7O9hdcxNkG1DvL8Lqfr4OwUFpOqL6qNsVoji0S9Oti6
+username tech-zero privilege 15 secret 9 $9$9A2X.nmmB9ydPv$.0lmcuUdkY1XhLhnbtwll9DjaJTY8O78mo7mQMzjIc2
+!
+redundancy
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface Loopback0
+ ip address 3.3.3.3 255.255.255.255
+!
+interface GigabitEthernet0/0
+ ip address 172.16.1.3 255.255.255.0
+ ip ospf 1 area 0
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/1
+ no ip address
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/1.1
+ encapsulation dot1Q 101
+ vrf forwarding HR-Users
+ ip address 172.16.10.2 255.255.255.0
+ ipv6 address FE80::2:1 link-local
+ ipv6 address 2001:DB8:172:10::2/64
+!
+interface GigabitEthernet0/1.2
+ encapsulation dot1Q 102
+ vrf forwarding Sales-Users
+ ip address 172.16.10.2 255.255.255.0
+ ipv6 address FE80::2:2 link-local
+ ipv6 address 2001:DB8:172:10::2/64
+!
+interface GigabitEthernet0/2
+ no ip address
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/2.1
+ encapsulation dot1Q 101
+ vrf forwarding HR-Users
+ ip address 172.16.11.2 255.255.255.0
+ ipv6 address FE80::2:3 link-local
+ ipv6 address 2001:DB8:172:11::2/64
+!
+interface GigabitEthernet0/2.2
+ encapsulation dot1Q 102
+ vrf forwarding Sales-Users
+ ip address 172.16.11.2 255.255.255.0
+ ipv6 address FE80::2:4 link-local
+ ipv6 address 2001:DB8:172:11::2/64
+!
+interface GigabitEthernet0/3
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+ media-type rj45
+!
+router ospf 1
+!
+ip forward-protocol nd
+!
+!
+no ip http server
+no ip http secure-server
+ip route 0.0.0.0 0.0.0.0 192.168.0.1
+ip route vrf Sales-Users 172.16.102.0 255.255.255.0 172.16.10.1
+ip route vrf Sales-Users 172.16.202.0 255.255.255.0 172.16.11.3
+ip route vrf HR-Users 172.16.101.0 255.255.255.0 172.16.10.1
+ip route vrf HR-Users 172.16.201.0 255.255.255.0 172.16.11.3
+!
+ipv6 route vrf HR-Users 2001:DB8:172:101::/64 2001:DB8:172:10::1
+ipv6 route vrf Sales-Users 2001:DB8:172:102::/64 2001:DB8:172:10::1
+ipv6 route vrf HR-Users 2001:DB8:172:201::/64 2001:DB8:172:11::3
+ipv6 route vrf Sales-Users 2001:DB8:172:202::/64 2001:DB8:172:11::3
+ipv6 ioam timestamp
+!
+!
+!
+control-plane
+!
+banner exec ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner incoming ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner login ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner motd ^C WAN, 31 Days ENCOR - Reveiw Lab 2 ^C
+!
+line con 0
+ exec-timeout 0 0
+ privilege level 15
+ logging synchronous
+ login local
+line aux 0
+line vty 0 4
+ exec-timeout 0 0
+ privilege level 15
+ logging synchronous
+ login local
+ transport input ssh
+!
+no scheduler allocate
+ntp server 216.239.35.8
+ntp server 216.239.35.4 prefer
+!
+end
