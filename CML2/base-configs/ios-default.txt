@@ -1,10 +1,11 @@
 conf t
 no ip domain-lookup
-vtp mode transparent
-vtp domain valbuena.tech
+ip domain-name valbuena.tech
+!vtp mode transparent
+!vtp domain valbuena.tech
 enable secret cisco
-spann mode rapid
-spann port def
+!spann mode rapid
+!spann port def
 ip routing
 ipv6 unicast-routing
 no service time log
@@ -14,7 +15,10 @@ logging sync
 no exec-timeout
 privi level 15
 exit
-line vty 0 15
-no login
+line vty 0 4
+logging sync
+login local
+no exec-timeout
 privi level 15
+transport input all
 host
