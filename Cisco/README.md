@@ -1,7 +1,13 @@
-# Network Engineer Study Tracker
-
+# ENCOR 350-401 Certification Study Tracker
+---
 ## Skills covered in this set:
 
-+ CCNP Enterprise 
-++ ENCOR 350-401
-++ ENARSI 
+1. Forwarding
+2. Layer 2
+3. Routing
+4. Serivces
+5. Overlay
+6. Wireless
+7. Virtualization
+8. Security
+9. SDN
