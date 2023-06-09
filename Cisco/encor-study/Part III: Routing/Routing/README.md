@@ -44,7 +44,7 @@
 + Troubleshooting EtherChannel Bundles
 + Load balancing traffic with EtherChannel bundles
 
-### OSPFv 3
+### OSPFv3
 + VLAN Trunking Protocol (VTP)
 + VTP revision reset
 + Dynamic Trunking Protocol (DTP)
@@ -75,17 +75,28 @@
 
 
 ### Advanced BGP
-+ VLAN Trunking Protocol (VTP)
-+ VTP revision reset
-+ Dynamic Trunking Protocol (DTP)
-+ Disabling DTP
-+ PAgP port modes
-+ LACP port modes
-+ EtherChannel configuration
-+ Minimum number of port-channel member interfaces
-+ Maximum number of port-channel member interfaces
-+ LACP system priority
-+ LACP interface priority
++ Resiliency in service providers
++ Internet transit routing
++ Extended ACL IGP network selection
++ Extended ACL BGP network selection
++ Prefix match specifications
++ Prefix matching with length parameters
++ Prefix lists
++ Regular expressions
++ Route map components
++ Route map syntax and processing
++ Route map conditional matching
++ Route map optional actions
++ BGP distribute list filtering
++ BGP prefix list filtering
++ BGP AS path ACL
++ BGP route maps for neighbors
++ BGP communities
++ Enabling BGP community support
++ BGP community list
++ Setting private BGP communities
++ Routing path selection using longest match
++ BGP best-path algorithm
 
 ### Multicast
 + VLAN Trunking Protocol (VTP)
