@@ -1,8 +1,6 @@
 # Layer 2
----
-
 ## Key Topics
-
+---
 ### Spanning Tree Protocol STP
 + 802.1D port types
 + STP key terminology
