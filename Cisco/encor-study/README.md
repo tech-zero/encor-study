@@ -2,6 +2,6 @@
 
 ## Skills covered in this set:
 
-+ CCNP Enterprise 
-++ ENCOR 350-401
-++ ENARSI 
+1. ENCOR 350-401
+2. ENARSI 300-410
+3. ENSLD 300-420
