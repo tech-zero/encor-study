@@ -1,11 +1,5 @@
 # 350-401 ENCOR Exam Topics
-
-## Exam Description
-
-To earn your CCNP Enterprise, CCIE Enterprise Infrastructure, or CCIE Enterprise Wireless certification,    
-you must pass the 350-401 ENCOR exam.  This exam tests your knowledge of:
-
-### 1.0 Architecture 15%
+### Section: ***1.0 Architecture 15%***
 
 1.1 Explain the different design principles used in an enterprise network   
 - 1.1.a Enterprise network design such as Tier 2, Tier 3, and Fabric Capacity planning   
@@ -34,5 +28,3 @@ you must pass the 350-401 ENCOR exam.  This exam tests your knowledge of:
 - 1.7.a Process and CEF
 - 1.7.b MAC address table and TCAM
 - 1.7.c FIB vs. RIB
-
-### 2.0 Virtualization
