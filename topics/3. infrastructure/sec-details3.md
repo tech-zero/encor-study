@@ -1,8 +1,6 @@
 # 350-401 ENCOR  
-## Section:
+### Section: ***3.0 Infrastructure 30%***
 ---
-### 3.0 Infrastructure 30%
-
 3.1 Layer 2  
 - 3.1.a Troubleshoot static and dynamic 802.1q trunking protocols
 - 3.1.b Troubleshoot static and dynamic EtherChannels
@@ -25,3 +23,5 @@
 - 3.4.b Configure and verify NAT/PAT
 - 3.4.c Configure first hop redundancy protocols, such as HSRP and VRRP
 - 3.4.d Describe multicast protocols, such as PIM and IGMP v2/v3   
+
+[main](../../README.md)

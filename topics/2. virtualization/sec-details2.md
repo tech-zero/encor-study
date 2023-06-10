@@ -1,8 +1,6 @@
 # 350-401 ENCOR  
-## Section:
+### Section: ***2.0 Virtualization 10%***
 ---
-### 2.0 Virtualization 10%
-
 2.1 Describe device virtualization technologies   
 - 2.1.a Hypervisor type 1 and 2  
 - 2.1.b Virtual machine
@@ -15,3 +13,5 @@
 2.3 Describe network virtualization concepts   
 - 2.3.a LISP
 - 2.3.b VXLAN
+
+[main](../../README.md)

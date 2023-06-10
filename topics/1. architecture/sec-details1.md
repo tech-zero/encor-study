@@ -1,5 +1,6 @@
 # 350-401 ENCOR Exam Topics
 ### Section: ***1.0 Architecture 15%***
+---
 
 1.1 Explain the different design principles used in an enterprise network   
 - 1.1.a Enterprise network design such as Tier 2, Tier 3, and Fabric Capacity planning   
@@ -28,3 +29,5 @@
 - 1.7.a Process and CEF
 - 1.7.b MAC address table and TCAM
 - 1.7.c FIB vs. RIB
+
+[main](../../README.md)

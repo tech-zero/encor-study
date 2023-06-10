@@ -1,7 +1,6 @@
 # 350-401 ENCOR Exam Topics
-## Section:
+### Section: ***4.0 Network Assurance 10%***
 ---
-### 4.0 Network Assurance 10%   
 
 4.1	Diagnose network problems using tools such as debugs, conditional debugs, trace route, ping, SNMP, and syslog   
 
@@ -16,3 +15,5 @@
 4.6	Describe Cisco DNA Center workflows to apply network      configuration, monitoring, and management
 
 4.7	Configure and verify NETCONF and RESTCONF10
+
+[main](../../README.md)

@@ -18,4 +18,6 @@
 				
 6.6	Construct EEM applet to automate configuration, troubleshooting,, or data collection			
 				
-6.7	Compare agent vs. agent less orchestration tools, such as Chef, Puppet, Ansible, and SaltStack				
+6.7	Compare agent vs. agent less orchestration tools, such as Chef, Puppet, Ansible, and SaltStack			
+
+[main](../../README.md)
