@@ -32,7 +32,8 @@
 
    3.2.c Configure and verify eBGP between directly connected neighbors (best path selection algorithm and neighbor relationships   
   
-   - [BGP](<10-11 bgp.pdf>)   
+   - [BGP](ch11.pdf)
+   - [Advanced BGP](ch12.pdf)   
 
 ### 3.3 Wireless
 ---  
@@ -55,14 +56,10 @@
    - [Troubleshooting Wireless Connectivity](ch21.pdf)
 
 
-### 3.4 IP Services
-
-3.4.a Describe Network Time Protocol (NTP)   
-   
-3.4.b Configure and verify NAT/PAT   
-
-3.4.c Configure first hop redundancy protocols, such as HSRP and VRRP   
-
-3.4.d Describe multicast protocols, such as PIM and IGMP v2/v3   
+### 3.4 IP Services   
+- 3.4.a Describe Network Time Protocol (NTP)
+- 3.4.b Configure and verify NAT/PAT
+- 3.4.c Configure first hop redundancy protocols, such as HSRP and VRRP
+- 3.4.d Describe multicast protocols, such as PIM and IGMP v2/v3   
 
 [main](../../README.md)
