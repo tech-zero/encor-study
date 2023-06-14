@@ -49,24 +49,24 @@
 
 ### 1.6.a QoS components
 
-- [QoS](ch14.pdf)
+- QoS, ch14
 
 ### 1.6.b QoS policy
 
-- [QoS](ch14.pdf)
+- QoS, ch14
 
 ## 1.7 Differentiate hardware and software switching mechanisms   
     
 ##  1.7.a Process and CEF 
 
-- [Packet Forwarding](ch1.pdf) 
+- Packet Forwarding, ch1
   
 ### 1.7.b MAC address table and TCAM   
 
-- [Packet Forwarding](ch1.pdf)
+- Packet Forwarding, ch1
 
 ### 1.7.c FIB vs. RIB   
 
-  - [Packet Forwarding](ch1.pdf)
+  - Packet Forwarding, ch1
 
 [main](../../README.md)
